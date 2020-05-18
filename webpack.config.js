@@ -23,7 +23,7 @@ module.exports={
           options:{
             name:'[name]_[hash].[ext]',
             outputPath:"images/",
-            limit:20480
+            limit:20480 
           }
         }
       },
@@ -36,7 +36,9 @@ module.exports={
         exclude:/node_modules/,
         loader:'babel-loader',
         options:{
-          presets:["@babel/preset-env"]
+          presets:[["@babel/preset-env",{
+            useBuiltIns:'usage'
+          }]]
         }
       }
     ]

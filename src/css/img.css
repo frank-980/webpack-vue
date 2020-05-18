@@ -3,6 +3,23 @@
   height:200px;
   transform: translate(100px,100px);
 }
-div:nth-of-type(odd){
-  color:red
+/*.article{
+  border:1px solid red;
+  width:200px;
+  height:200px;
+  transform:rotate(7deg);
+}*/
+:root {
+  --color-black: rgb(0,0,0);
+  --color-blue: #32c7ff;
+}
+.article {
+  font-size: 14px;
+  transform:rotate(7deg);
+  border:1px solid red;
+  width:200px;
+  height:200px;
+  & a {
+    color: var(--color-blue);
+  }
 }
