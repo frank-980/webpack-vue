@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin=require('html-webpack-plugin');
 const { CleanWebpackPlugin }=require('clean-webpack-plugin')
 const webpack=require('webpack')
+const { VueLoaderPlugin } = require('vue-loader');
 module.exports={
   mode:'development',
   devtool:'cheap-module-eval-source-map',
@@ -40,15 +41,23 @@ module.exports={
             useBuiltIns:'usage'
           }]]
         }
+      },
+      {
+        test:/\.vue$/,
+        use:'vue-loader',
       }
     ]
+  },
+  resolve: {
+    extensions: ['.js', '.vue']
   },
   plugins:[
     new HtmlWebpackPlugin({
       template:'src/index.html'
     }),
     new CleanWebpackPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new VueLoaderPlugin()
   ],
   output:{
     filename:'[name].js',
