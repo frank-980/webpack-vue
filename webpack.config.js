@@ -53,6 +53,7 @@ module.exports={
   },
   plugins:[
     new HtmlWebpackPlugin({
+      filename: 'test.html',
       template:'src/index.html'
     }),
     new CleanWebpackPlugin(),

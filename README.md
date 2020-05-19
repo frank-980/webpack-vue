@@ -1,4 +1,43 @@
-# Webpack
+# Webpack Plugins
+
+
+## html-webpack-plugin
+简介：自动添加.html文件 并自动写入相应依赖
+
+```
+npm i html-webpack-plugin -D
+```
+
+webpack.config.js新增以下配置
+
+```
+const HtmlWebpackPlugin=require('html-webpack-plugin');
+plugins:[
+    new HtmlWebpackPlugin({
+      filename: 'index.html', //生成的文件名
+      template:'src/index.html' //生成的文件模板，根据模板添加依赖
+    }),
+  ],
+```
+
+## clean-webpack-plugin
+
+简介：打包时删除并重新生成文件
+
+```
+npm i html-webpack-plugin -D
+```
+
+webpack.config.js新增以下配置
+
+```
+const { CleanWebpackPlugin }=require('clean-webpack-plugin')
+plugins:[   
+    new CleanWebpackPlugin(),
+  ],
+```
+
+# Webpack Loader
 
 ## vue-loader
 使用npm安装以下包
@@ -114,7 +153,14 @@ export default {
 
 ## postcss-loader
 
-在webpack.config.js配置文件里加入module配置
+安装npm包
+
+```
+npm i postcss-loader -D
+```
+
+在webpack.config.js添加配置项
+
 ```
 module:{
     rules:[
@@ -129,12 +175,16 @@ module:{
 以备按需加载postcss的插件，后续只需修改该文件即可，无需修改webpack.config.js
 
 ### autoprefixer
-添加浏览器厂商前缀
-npm安装包
+
+简介：添加浏览器厂商前缀
+安装npm包
+
 ```
 npm i autoprefixer --save
 ```
-修改postcss的配置文件
+
+添加postcss配置项
+
 ```
 //postcss.config.js
 module.exports = {
@@ -149,12 +199,16 @@ module.exports = {
 ```
 
 ### postcss-px-to-viewport
-px单位转成vw单位
-npm安装包
+
+简介：px单位转成vw单位
+安装npm包
+
 ```
 npm i postcss-px-to-viewport --save
 ```
-修改postcss的配置文件
+
+添加postcss配置项
+
 ```
 //postcss.config.js
 module.exports = {
@@ -173,12 +227,16 @@ module.exports = {
 ```
 
 ### postcss-import
-允许引入css文件 //@import "index.css" 
-npm安装包
+
+简介：允许import方式引入css文件 //@import "index.css" 
+安装npm包
+
 ```
 npm i postcss-import --save
 ```
-修改postcss的配置文件
+
+添加postcss的配置项
+
 ```
 //postcss.config.js
 module.exports = {
