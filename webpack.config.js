@@ -10,6 +10,7 @@ module.exports={
     main:'./src/index.js'
   },
   devServer:{
+    publicPath: "/",
     contentBase:'./dist',
     open:true,
     hot:true,
@@ -24,13 +25,13 @@ module.exports={
           options:{
             name:'[name]_[hash].[ext]',
             outputPath:"images/",
-            limit:20480 
+            limit:5 
           }
         }
       },
       {
         test:/\.css$/,
-        use:['style-loader','css-loader','postcss-loader']
+        use:['style-loader','css-loader']
       },
       {
         test:/\.js$/,
@@ -48,12 +49,10 @@ module.exports={
       }
     ]
   },
-  resolve: {
-    extensions: ['.js', '.vue']
-  },
+  
   plugins:[
     new HtmlWebpackPlugin({
-      filename: 'test.html',
+      //filename: 'test.html',
       template:'src/index.html'
     }),
     new CleanWebpackPlugin(),

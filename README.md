@@ -39,6 +39,34 @@ plugins:[
 
 # Webpack Loader
 
+## babel-loader
+简介：主要用于将 ECMAScript 2015+（ES6） 版本的代码转换为向后兼容的 JavaScript 语法，以便能够运行在当前和旧版本的浏览器或其他环境中。
+
+使用npm安装以下包
+@babel/core是babel的核心库，最终将ES6语法转换成低级JS语法
+@babel/polyfill 补充浏览器没有实现的语法
+@babel/preset-env 根据开发者的配置，按需加载插件，比如node、浏览器等
+```
+npm i babel-loader @babel/core @babel/preset-env -D
+npm i @babel/polyfill -S 
+```
+添加webpack.config.js的配置选项
+```
+entry:['babel-polyfill','./src/main.js'] /* 入口文件模块路径前，加上babel-polyfill */
+      {
+        test:/\.js$/,
+        exclude:/node_modules/,
+        loader:'babel-loader',
+        options:{
+          //@babel/preset-env默认配置
+          presets:[["@babel/preset-env",{
+            //只有我们项目中用到的浏览器没有实现的语法特性，在打包的时候，才会帮我们在出口文件中实现，而不是把所有的浏览器没有实现的语法特性都帮我们在出口文件中实现
+            useBuiltIns:'usage' 
+          }]]
+        }
+      },
+```
+
 ## vue-loader
 使用npm安装以下包
 ```
@@ -245,3 +273,5 @@ module.exports = {
   }
 };
 ```
+
+//babel-preset-env参考https://www.cnblogs.com/chyingp/archive/2018/06/05/9137849.html

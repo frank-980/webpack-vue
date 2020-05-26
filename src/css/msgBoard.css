@@ -1,0 +1,126 @@
+.ant-input-group-wrapper {
+    height: 100%;
+    display: block;
+  }
+  .ant-form-item-children {
+    display: block;
+  }
+  .ant-form-item {
+    margin-bottom: 1em;
+  }
+  .ant-form-explain {
+    margin-bottom: 0px;
+    font-size: 12px;
+    color: red;
+    margin-top: 3px;
+  }
+  .Bjq {
+    margin: 2em 0 1em;
+    padding: 0 1em;
+    overflow: hidden;
+  }
+  .Bjq .iconfont {
+    color: #e38fa9;
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  .Bjq .editor_div {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+    word-wrap: break-word;
+    border-radius: 5px;
+  }
+  .Bjq .editor_div .editor_toolbar {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    background: #f7f3ee;
+    border-radius: 5px 5px 0 0;
+    text-align: left;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
+    left: 1px;
+    top: 1px;
+    right: 1px;
+  }
+  .Bjq .editor_div .editor_toolbar .fr {
+    float: right;
+    cursor: pointer;
+    padding: 0 15px;
+  }
+  .Bjq .editor_div .editor_toolbar .fr:hover {
+    text-decoration: underline;
+  }
+  .Bjq .editor_div .editor_textarea {
+    width: 100%;
+    height: 150px;
+    overflow: auto;
+    box-sizing: border-box;
+    background: #fff;
+    text-align: left;
+    padding: 0px;
+  }
+  .Bjq .editor_div .editor_textarea textarea {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-top: 50px;
+    border-radius: 5px;
+  }
+  .Bjq .editor_div .editor_textarea textarea:hover,
+  .Bjq .editor_div .editor_textarea textarea:focus,
+  .Bjq .editor_div .editor_textarea textarea:active {
+    border-color: #faad14;
+  }
+  .Bjq button {
+    padding: 10px 0;
+    min-width: 150px;
+    margin: 10px 0;
+    display: block;
+    float: right;
+    background: #f7f3ee;
+    color: #9e886c;
+    border-radius: 5px;
+    border: 1px solid #e7ded2;
+  }
+  .Bjq button:active {
+    background: #9e886c;
+    color: #f7f3ee;
+  }
+  @media screen and (max-width: 450px) {
+    .Bjq button {
+      width: 100%;
+    }
+  }
+  
+  .mask{
+      position: fixed;
+      background-color: rgba(0,0,0,.65);
+      top:0;
+      left:0;
+      width:100%;
+      height: 100%;
+      z-index: 100;
+  }
+  .form{
+      position: relative;
+      top:100px;
+      z-index: 200;
+      width:520px;
+      background: white;
+      display: block;
+      margin: 0 auto;
+  }
+  .form-header{
+
+  }
+  .form-body{
+
+  }
+  .form-footer{
+
+  }

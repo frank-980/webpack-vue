@@ -1,0 +1,63 @@
+
+  :root {
+    --color-black: rgb(0,0,0);
+    --color-blue: #32c7ff;
+    --color-pink: #e38fa9;
+    --color-brown:#948c76;
+  }
+  .Header {
+    width: 100%;
+    text-align: center;
+  }
+  .Header .header-box {
+    animation: fadein 0.3s;
+  }
+  .Header .header-box img {
+    width: 40vw;
+    height: 40vw;
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 50%;
+  }
+  .Header .my-id {
+    font-size: 1.3em;
+    font-weight: 400;
+    padding: 0 0.5em;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    margin: 2em 0;
+    display: inline-block;
+    color: #948C76;
+    background: #F7F3EE;
+  }
+  .Header .my-sort {
+    margin-bottom: 2em;
+  }
+  .Header .my-sort a {
+    display: inline-block;
+    margin: 0 1em;
+    font-size: 0.8em;
+  }
+  .Header .my-sort a.active {
+    text-decoration: underline;
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+      transform: translateY(-5em);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /*.avatar_bar {
+    
+    
+    & .avatar {
+      
+    }
+    & .name {
+      color: var(--color-blue);
+    }
+  }*/
