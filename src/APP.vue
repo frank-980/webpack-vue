@@ -12,10 +12,10 @@ export default {
         headers,
     }
 }
+
 </script>
 <style>
-    .wrap{
-        font-size: .14rem;
+.wrap{
     margin: .5rem auto 0;
     color: #787978;
     font-family: Microsoft Yahei;
@@ -25,5 +25,5 @@ export default {
     width: 100%;
     height: auto;
     position: relative;
-    }
+}
 </style>
