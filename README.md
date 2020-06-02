@@ -23,7 +23,7 @@
 
 ## 项目架构
 
-![项目架构图](https://raw.githubusercontent.com/frank-980/nodeJS-koa2/master/Design.png)
+![项目架构图](https://raw.githubusercontent.com/frank-980/webpack-vue/master/Design.png)
 
 
 ## 技术栈
