@@ -6,7 +6,7 @@
      <div class="box bg-gray-lightest p-t-0 p-b-0">
       <div class="row">
        <div class="col-4 p-t-10 p-b-10 border">
-        ● 网站：www.redspite.com
+        ● 网站：114.215.208.227:8081
        </div>
       </div>
      </div>
@@ -18,10 +18,10 @@
      <div class="box bg-gray-lightest p-t-0 p-b-0">
       <div class="row">
        <div class="col-4 p-t-10 p-b-10">
-        ● 张小月 | 女 | 1993
+        ● 孙旭东 | 男 | 1997
        </div>
        <div class="col-4 p-t-10 p-b-10 border">
-        ● 西南科技大学 | 电气工程 | 本科
+        ● 上海电子信息职业技术学院 | 信息安全
        </div>
        <div class="col-4 p-t-10 p-b-10 border">
         ● 前端开发 | 3 年工作经验
@@ -30,15 +30,7 @@
      </div>
      <div class="box bg-gray-lightest">
       ● Github：
-      <a href="https://github.com/Redspitee" target="_blank">https://github.com/Redspitee</a>
-     </div>
-     <div class="box bg-gray-lightest">
-      ● Gitee：
-      <a href="https://gitee.com/redspite" target="_blank">https://gitee.com/redspite</a>
-     </div>
-     <div class="box bg-gray-lightest">
-      ● 技术博客：
-      <a href="https://www.redspite.com" target="_blank">https://www.redspite.com</a>
+      <a href="https://github.com/frank-980" target="_blank">https://github.com/frank-980</a>
      </div>
     </div>
    </section>
@@ -46,19 +38,16 @@
     <h1 class="f-s-18 f-w-900 m-b-20">技术优势</h1>
     <div class="boxes default m-b-20">
      <div class="box bg-gray-lightest">
-      ● 熟练使用 Vue React Cordova 微信小程序 框架
+      ● 熟练使用 Vue 微信小程序 框架
      </div>
      <div class="box bg-gray-lightest">
-      ● 熟练掌握 CSS3 ES6 webpack TCP/HTTP 模块化开发 ...
+      ● 熟练掌握 CSS3 ES6 webpack 模块化开发 ...
      </div>
      <div class="box bg-gray-lightest">
-      ● 熟练掌握 移动端HTML5开发 hybrid开发 跨浏览器、跨终端开发
+      ● 可以写点服务端代码
      </div>
      <div class="box bg-gray-lightest">
-      ● 可以写点NodeJs
-     </div>
-     <div class="box bg-gray-lightest">
-      ● 独立解决问题、百折不挠、细节控
+      ● 独立解决问题、百折不挠。
      </div>
     </div>
    </section>
@@ -67,15 +56,15 @@
     <div class="boxes default m-b-20">
      <div class="box bg-gray-lightest">
       ●
-      <a href="https://github.com/Redspitee/blog" target="_blank"> 个人博客（使用React+Redux+Ts+Antd+Koa构建）</a>
+      <a href="https://github.com/frank-980/webpack-vue.git" target="_blank"> Vue+Webpack+Koa2+Mysql 构建个人主页--前端</a>
      </div>
      <div class="box bg-gray-lightest">
       ●
-      <a href="https://github.com/Redspitee/react-go-top" target="_blank"> react-go-top（基于react的回到顶部插件,发布在npm的插件包）</a>
+      <a href="https://github.com/frank-980/nodeJS-koa2.git" target="_blank"> Vue+Webpack+Koa2+Mysql 构建个人主页--服务端</a>
      </div>
      <div class="box bg-gray-lightest">
       ●
-      <a href="https://github.com/Redspitee/Cv" target="_blank"> 早期博客（纯静态页面，页面放置于虚拟机）</a>
+      <a href="https://github.com/frank-980/webpack-demo" target="_blank"> Webpack：Loader和Plugins一些加载方式</a>
      </div>
     </div>
    </section>
@@ -83,20 +72,15 @@
     <h1 class="f-s-18 f-w-900 m-b-20">工作经历</h1>
     <div class="boxes default m-b-20">
      <div class="box bg-gray-lightest">
-      ● 成都深珀数据公司 （ 2016 年 10 月 ~ 至今 ）
+      ● 上海海岸线教育 （ 2017 年 12 月 ~ 2020 年 5 月 ）
      </div>
      <div class="box bg-gray-lightest">
       <p class="m-t-0"><b>项目从0到1</b></p>
-      <p>混合式开发APP、微信小程序开发、后台管理系统开发</p>
-     </div>
-    </div>
-    <div class="boxes default m-b-20">
-     <div class="box bg-gray-lightest">
-      ● 成都清风竞技公司 （ 2016 年 3 月 ~ 2016 年 10 月 ）
-     </div>
-     <div class="box bg-gray-lightest">
-      <p class="m-t-0"><b>官网页面更新与维护</b> </p>
-      <p>负责官网页面制作。PSD切图后构建页面框架，利用JS\JQ\CSS3书写前端功能，让页面更充实丰富,并将代码上传到代码托管平台 。</p>
+      <p>PC,移动端开发、微信小程序开发、后台服务开发</p>
+      <p>海岸线官网 www.coastedu.com</p>
+      <p>知仕阅读官网 www.coastzs.com</p>
+      <p>海岸线官网 www.coastedu.com</p>
+      <p>微信搜索小程序：知仕阅读</p>
      </div>
     </div>......
    </section>

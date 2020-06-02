@@ -4,7 +4,7 @@
             <img :src="imageSrc"/>
         </div>
         <div>
-          <p class="my-id">RedSpite</p>
+          <p class="my-id">Frank</p>
         </div>
         <div class="my-sort">
             <a>

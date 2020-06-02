@@ -1,3 +1,62 @@
+<style>
+  .msgItem{
+    border-bottom:1px solid #ccc;
+  }
+  .msgIndex{
+    margin: 30px 0 0 0;
+    font-size:14px
+  }
+  .msgRow{
+    display: flex;
+    align-items:center;
+    padding:30px 0
+  }
+  .msgAvatar{
+    
+    width:50px;
+    height:50px
+  }
+  .msgInfo{
+    padding-left:12px;
+  }
+  .msgInfo p{
+    margin:5px 0 5px 0px
+  }
+  .msgAuthor{
+    font-size:12px;
+    color: rgba(0,0,0,.45);
+    display: inline;
+  }
+  .msgCreated{
+    font-size: 12px;
+    color:#ccc;
+    margin-left:10px;
+  }
+  .msgDel{
+    display: inline-block;
+    color:red;
+    padding-left:62px;
+    margin:0 0 25px 0;
+    cursor: pointer;
+  }
+  .loadMore{
+    display: inline-block;
+    border:1px solid #d9d9d9;
+    margin-top:30px;
+    text-align: center;
+    padding:0 15px;
+    font-size:14px;
+    height:32px;
+    line-height:32px;
+    color:black;
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+  }
+  .loadMore:hover{
+    border-color:#40a9ff;
+    color:#40a9ff;
+  }
+
+</style>
 <template>
 <div>
    <div class="Bjq">
@@ -16,18 +75,29 @@
       <textarea v-model="content" class="ant-input"></textarea>
      </div>
     </div>
-    <button @click="createMsg">确 认</button>
+    <button v-if="userInfo!=null" @click="createMsg">确 认</button>
    </div>
 
 
   <loginForm @func="setUserInfo"></loginForm>
-  <div v-for="(item,index) in msgList" :key="index">
-    <img :src="item.picture" />{{item.userName}} , {{item.content}}
-    <span @click="deleteMsg(item.id)">删除</span>
+  <div class="msgItem" v-for="(item,index) in msgList" :key="index">
+    <p class="msgIndex">{{msgLength-(index)}}楼</p>
+    <div class="msgRow">
+      <img class="msgAvatar" :src="item.picture" />
+      <div class="msgInfo">
+        <p class="msgAuthor">{{item.userName}}</p>
+        <span class="msgCreated">{{item.createdAt}}</span>
+        <p class="msgContent">{{item.content}}</p>
+      </div>
+    </div>
+    <p class="msgDel" v-if="userInfo==null?false:item.userName==userInfo.userName" @click="deleteMsg(item.id)">删除</p>
   </div>
-  <a @click="loadMore" v-if="((currentIndex+1)*displayLength)<msgLength">加载更多</a>
+  <div style="text-align:center">
+    <a class="loadMore" @click="loadMore" v-if="((currentIndex+1)*displayLength)<msgLength">加载更多</a>
+  </div>
 </div>
 </template>
+
 <script>
 import loginForm from "./loginForm.vue"
 export default {
