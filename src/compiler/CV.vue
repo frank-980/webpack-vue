@@ -6,7 +6,10 @@
      <div class="box bg-gray-lightest p-t-0 p-b-0">
       <div class="row">
        <div class="col-4 p-t-10 p-b-10 border">
-        ● 网站：114.215.208.227:8081
+        ● 电话：15618084203
+       </div>
+	   <div class="col-4 p-t-10 p-b-10 border">
+        ● 邮箱：1005253787@qq.com
        </div>
       </div>
      </div>

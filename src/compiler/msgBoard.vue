@@ -54,6 +54,7 @@
   .loadMore:hover{
     border-color:#40a9ff;
     color:#40a9ff;
+	cursor:pointer
   }
 
 </style>
